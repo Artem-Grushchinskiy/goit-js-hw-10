@@ -18,6 +18,8 @@ function mechanikal(event) {
       })
       .catch(error => {
         Notiflix.Notify.failure(error.message);
+        countryEl.innerHTML = ``;
+        countriesEl.innerHTML = ``;
       });
   } else {
   }
