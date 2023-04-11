@@ -16,8 +16,8 @@ function mechanikal(event) {
       .then(resp2 => {
         workingCountries(resp2);
       })
-      .catch(resp3 => {
-        Notiflix.Notify.failure('Oops, there is no country with that name');
+      .catch(error => {
+        Notiflix.Notify.failure(error.message);
       });
   } else {
   }
